@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Microsoft - Cloud, Computers, Apps & Gaming</title>
   </head>
   <body class="font-sans">
     <header>
+      <!-- Navbar Section -->
       <nav class="flex justify-between items-center px-3 py-3 lg:px-16 lg:py-0">
         <div class="flex justify-center items-center lg:order-2">
           <div class="hamburger cursor-pointer inline-block lg:hidden">
@@ -44,49 +45,49 @@
         </div>
         <div class="lg:order-1 lg:flex">
           <div class="self-center mx-4">
-            <img src="microsoft.png" alt="Microsoft" class="w-28" />
+            <img src="images/microsoft.png" alt="Microsoft" class="w-28" />
           </div>
           <div class="menu-items">
             <ul class="list-none hidden lg:flex lg:items-center text-sm p-0">
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
-                  class="no-underline lg:mr-4"
+                  class="no-underline lg:mr-4 text-black"
                   >Microsoft 365</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/microsoft-365/microsoft-office?rtc=1"
-                  class="no-underline lg:mr-4"
+                  class="no-underline lg:mr-4 text-black"
                   >Office</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/windows/?r=1"
-                  class="no-underline lg:mr-4"
+                  class="no-underline lg:mr-4 text-black"
                   >Windows</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/surface"
-                  class="no-underline lg:mr-4"
+                  class="no-underline lg:mr-4 text-black"
                   >Surface</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.xbox.com/en-IN/"
-                  class="no-underline lg:mr-4"
+                  class="no-underline lg:mr-4 text-black"
                   >X Box</a
                 >
               </li>
               <li>
                 <a
                   href="https://support.microsoft.com/en-us"
-                  class="no-underline"
+                  class="no-underline text-black"
                   >Support</a
                 >
               </li>
@@ -148,8 +149,10 @@
           </div>
         </div>
       </nav>
+
+      <!-- Hero Section -->
       <section
-        class="slider flex flex-col-reverse lg:flex-row lg:justify-between lg:bg-gray-100"
+        class="slider flex flex-col-reverse lg:flex-row lg:justify-between lg:bg-gray-100 shadow-md"
       >
         <div class="left w-100 pt-4 pb-3 px-2 lg:w-1/4 lg:mx-20 lg:my-20">
           <h2 class="text-2xl font-medium lg:text-3xl">
@@ -169,10 +172,146 @@
         </div>
         <div class="right bg-gray-100 items-center">
           <img
-            src="Laptop.jpg"
+            src="images/Laptop.jpg"
             alt="ERROR"
             class="lg:w-[53rem] w-[25rem] md:w-[50rem] relative float-right"
           />
+        </div>
+      </section>
+
+      <!-- Below Navbar Section -->
+      <section class="promo flex flex-wrap justify-center my-14">
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Choose your Microsoft 365</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon2.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/surface?icid=MSCOM_QL_Surface"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Exlore Surface devices</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon3.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/store/b/xbox?icid=MSCOM_QL_Xbox"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Buy Xbox games</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/windows/get-windows-11?icid=MSCOM_QL_Windows"
+              class="text-base text-[#0067b8] font-medium hover:border-2 hover:border-[#0067b8] hove::border-dashed"
+              >Get Windows 11</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid Section -->
+      <section class="mx-16">
+        <div class="grid md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid1.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">Surface Laptop Go 2</div>
+              <p>
+                A sleek laptop with a 12.4-inch touchscreen, great typing
+                experience and improved HD camera.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-2?icid=mscom_marcom_CPH1a_SurfaceLaptopGo2&icid=FY22SpringSurface#overview"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Learn More ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid2.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">Surface Laptop 4</div>
+              <p>
+                Do it all with a perfect balance of sleek, ultra-thin design,
+                multitasking speed and improved performance.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-4?icid=mscom_marcom_CPH2a_SurfaceLaptop4"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Shop Now ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid3.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">PC Game Pass</div>
+              <p>
+                Unlock 100+ great games and EA Play, plus get your first month
+                for ₹50. Offer available to new subscribers only.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.xbox.com/en-in/games/store/pc-game-pass/cfq7ttc0kgq8?icid=mscom_marcom_CPH3a_PCGamePass"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Join Now ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid4.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">
+                Design for life today - and tomorrow
+              </div>
+              <p>
+                The next-generation of games. Your goals. Friends and family.
+                Windows 11 was made to bring you closer to everything you love.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/windows/windows-11?icid=mscom_marcom_CPH4a_Win11PChlth#pchealthcheck"
+                class="text-base text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >See if your PC is ready ></a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </header>
