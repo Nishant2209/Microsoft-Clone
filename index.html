@@ -9,9 +9,9 @@
   </head>
   <body class="font-sans">
     <header>
-      <nav class="flex justify-between items-top px-3 py-3 md:px-16">
-        <div class="flex justify-center items-top md:order-2">
-          <div class="hamburger cursor-pointer inline-block md:hidden">
+      <nav class="flex justify-between items-center px-3 py-3 lg:px-16 lg:py-0">
+        <div class="flex justify-center items-center lg:order-2">
+          <div class="hamburger cursor-pointer inline-block lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -27,7 +27,7 @@
               />
             </svg>
           </div>
-          <div class="ml-2 md:hidden">
+          <div class="ml-2 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -42,44 +42,44 @@
             </svg>
           </div>
         </div>
-        <div class="md:order-1 md:flex">
-          <div class="text-center">
+        <div class="lg:order-1 lg:flex">
+          <div class="self-center mx-4">
             <img src="microsoft.png" alt="Microsoft" class="w-28" />
           </div>
           <div class="menu-items">
-            <ul class="list-none md:flex md:items-top text-sm p-0">
+            <ul class="list-none hidden lg:flex lg:items-center text-sm p-0">
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
-                  class="no-underline md:mr-4"
+                  class="no-underline lg:mr-4"
                   >Microsoft 365</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/microsoft-365/microsoft-office?rtc=1"
-                  class="no-underline md:mr-4"
+                  class="no-underline lg:mr-4"
                   >Office</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/windows/?r=1"
-                  class="no-underline md:mr-4"
+                  class="no-underline lg:mr-4"
                   >Windows</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.microsoft.com/en-in/surface"
-                  class="no-underline md:mr-4"
+                  class="no-underline lg:mr-4"
                   >Surface</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.xbox.com/en-IN/"
-                  class="no-underline md:mr-4"
+                  class="no-underline lg:mr-4"
                   >X Box</a
                 >
               </li>
@@ -93,8 +93,8 @@
             </ul>
           </div>
         </div>
-        <div class="flex justify-between md:order-3">
-          <div class="hidden md:block">
+        <div class="flex justify-between lg:order-3">
+          <div class="hidden lg:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -148,12 +148,33 @@
           </div>
         </div>
       </nav>
-      <!-- <section class="flex flex-col-reverse">
-        <div class="left"></div>
-        <div class="right">
-          <img src="Background.jpg" alt="ERROR" class="object-contain" />
+      <section
+        class="slider flex flex-col-reverse lg:flex-row lg:justify-between lg:bg-gray-100"
+      >
+        <div class="left w-100 pt-4 pb-3 px-2 lg:w-1/4 lg:mx-20 lg:my-20">
+          <h2 class="text-2xl font-medium lg:text-3xl">
+            Surface Laptop Studio
+          </h2>
+          <p class="mb-4 text-base lg:text-base">
+            Flex your creative muscle on the most powerful Surface Laptop. Now
+            available with Windows 11.
+          </p>
+          <div class="my-8">
+            <a
+              href="https://www.microsoft.com/en-in/surface?icid=mscom_marcom_H2a_SurfaceLaptopStudio"
+              class="bg-[#0067b8] text-[white] rounded-sm no-underline px-5 py-3 font-medium"
+              >Shop Now</a
+            >
+          </div>
         </div>
-      </section> -->
+        <div class="right bg-gray-100 items-center">
+          <img
+            src="Laptop.jpg"
+            alt="ERROR"
+            class="lg:w-[53rem] w-[25rem] md:w-[50rem] relative float-right"
+          />
+        </div>
+      </section>
     </header>
   </body>
 </html>
