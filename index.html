@@ -10,10 +10,508 @@
   <body class="font-sans">
     <header id="header">
       <!-- Navbar Section -->
-      <nav class="flex justify-between items-center px-3 py-3 lg:px-16 lg:py-0">
-        <div class="flex justify-center items-center lg:order-2">
-          <div class="hamburger cursor-pointer inline-block lg:hidden">
-            <svg
+      <nav class="navbar">
+        <div
+          class="flex justify-between items-center px-3 py-3 lg:px-16 lg:py-0"
+        >
+          <div class="flex justify-center items-center lg:order-2">
+            <div class="hamburger cursor-pointer inline-block lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
+            <div class="ml-2 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="lg:order-1 lg:flex">
+            <div class="self-center mx-4">
+              <img src="images/microsoft.png" alt="Microsoft" class="w-28" />
+            </div>
+            <div class="menu-items">
+              <ul class="list-none hidden lg:flex lg:items-center text-sm p-0">
+                <li>
+                  <a
+                    href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
+                    class="no-underline lg:mr-4 text-black"
+                    >Microsoft 365</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.microsoft.com/en-in/microsoft-365/microsoft-office?rtc=1"
+                    class="no-underline lg:mr-4 text-black"
+                    >Office</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.microsoft.com/en-in/windows/?r=1"
+                    class="no-underline lg:mr-4 text-black"
+                    >Windows</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.microsoft.com/en-in/surface"
+                    class="no-underline lg:mr-4 text-black"
+                    >Surface</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.xbox.com/en-IN/"
+                    class="no-underline lg:mr-4 text-black"
+                    >X Box</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://support.microsoft.com/en-us"
+                    class="no-underline text-black"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-between lg:order-3">
+            <div
+              class="hidden lg:text-black lg:text-sm lg:flex lg:items-center"
+            >
+              <div class="hidden lg:inline-block lg:mr-3">Search</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="text-center ml-4">
+              <a
+                href="https://www.microsoft.com/en-in/store/cart"
+                class="text-black text-sm no-underline"
+              >
+                <div class="flex items-center">
+                  <div class="hidden lg:inline-block lg:mr-3">Cart</div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center ml-4">
+              <a
+                href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&rver=7.3.6963.0&wp=MBI_SSL&wreply=https%3a%2f%2fwww.microsoft.com%2fen-in%2fstore%2fcart&lc=16393&id=74335"
+                class="text-black text-sm no-underline"
+              >
+                <div class="flex items-center">
+                  <div class="hidden lg:inline-block lg:mr-3">Sign In</div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="Hero_Section">
+        <div
+          class="slider flex flex-col-reverse lg:flex-row lg:justify-between lg:bg-gray-100 shadow-md"
+        >
+          <div class="left w-100 pt-4 pb-3 px-2 lg:w-1/4 lg:mx-20 lg:my-20">
+            <h2 class="text-2xl font-medium lg:text-3xl">
+              Surface Laptop Studio
+            </h2>
+            <p class="mb-4 text-base lg:text-base">
+              Flex your creative muscle on the most powerful Surface Laptop. Now
+              available with Windows 11.
+            </p>
+            <div class="my-8">
+              <a
+                href="https://www.microsoft.com/en-in/surface?icid=mscom_marcom_H2a_SurfaceLaptopStudio"
+                class="bg-[#0067b8] text-[white] rounded-sm no-underline px-5 py-3 font-medium"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+          <div class="right bg-gray-100 items-center">
+            <img
+              src="images/Laptop.jpg"
+              alt="ERROR"
+              class="lg:w-[53rem] w-[25rem] md:w-[50rem] relative float-right"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Below Navbar Section -->
+    <section class="Below_Navbar">
+      <div class="promo flex flex-wrap justify-center my-14">
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Choose your Microsoft 365</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon2.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/surface?icid=MSCOM_QL_Surface"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Exlore Surface devices</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon3.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/store/b/xbox?icid=MSCOM_QL_Xbox"
+              class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+              >Buy Xbox games</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="item mx-4 my-3">
+            <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
+            <a
+              href="https://www.microsoft.com/en-in/windows/get-windows-11?icid=MSCOM_QL_Windows"
+              class="text-base text-[#0067b8] font-medium hover:border-2 hover:border-[#0067b8] hove::border-dashed"
+              >Get Windows 11</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1st Grid Section -->
+    <section class="Grid">
+      <div class="mx-2 lg:mx-16">
+        <div class="grid md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+          <div class="grid-items flex flex-wrap my-5">
+            <img
+              src="images/grid1.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">Surface Laptop Go 2</div>
+              <p>
+                A sleek laptop with a 12.4-inch touchscreen, great typing
+                experience and improved HD camera.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-2?icid=mscom_marcom_CPH1a_SurfaceLaptopGo2&icid=FY22SpringSurface#overview"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Learn More ></a
+              >
+            </div>
+          </div>
+          <div class="grid-items flex flex-wrap my-5">
+            <img
+              src="images/grid2.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">Surface Laptop 4</div>
+              <p>
+                Do it all with a perfect balance of sleek, ultra-thin design,
+                multitasking speed and improved performance.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-4?icid=mscom_marcom_CPH2a_SurfaceLaptop4"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Shop Now ></a
+              >
+            </div>
+          </div>
+          <div class="grid-items flex flex-wrap my-5">
+            <img
+              src="images/grid3.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">PC Game Pass</div>
+              <p>
+                Unlock 100+ great games and EA Play, plus get your first month
+                for ₹50. Offer available to new subscribers only.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.xbox.com/en-in/games/store/pc-game-pass/cfq7ttc0kgq8?icid=mscom_marcom_CPH3a_PCGamePass"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Join Now ></a
+              >
+            </div>
+          </div>
+          <div class="grid-items flex flex-wrap my-5">
+            <img
+              src="images/grid4.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">
+                Design for life today - and tomorrow
+              </div>
+              <p>
+                The next-generation of games. Your goals. Friends and family.
+                Windows 11 was made to bring you closer to everything you love.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/windows/windows-11?icid=mscom_marcom_CPH4a_Win11PChlth#pchealthcheck"
+                class="text-base text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >See if your PC is ready ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Microsoft Edge Section -->
+    <section class="Microsoft_Edge">
+      <div class="lg:mx-16 my-16">
+        <div class="grid grid-rows-2 md:flex md:flex-wrap md:flex-col">
+          <div class="card-background flex flex-wrap">
+            <img
+              src="images/edge.jpg"
+              alt=""
+              class="w-[100%] object-cover object-center"
+            />
+          </div>
+          <div class="card-foreground shadow-lg">
+            <div>
+              <h2 class="font-medium">Microsoft Edge</h2>
+              <div>
+                World-class performance with more privacy, more productivity and
+                more value while you browse.
+              </div>
+              <div class="my-10">
+                <a
+                  href="https://www.microsoft.com/en-us/edge?form=MI13F3&OCID=MI13F3"
+                  class="bg-[#0067b8] text-[white] rounded-sm no-underline px-5 py-3 font-medium"
+                  >Download Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Section (2nd Grid Section) -->
+    <section class="Business">
+      <div class="mx-2 lg:mx-16">
+        <h1 class="text-3xl font-semibold my-0">For business</h1>
+        <div class="grid md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid5.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">
+                Surface Laptop Go 2 for Business
+              </div>
+              <p>
+                A sleek, portable laptop featuring a great typing experience,
+                Windows 11 Pro and professional-grade performance.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/surface/business/surface-laptop-go-2?icid=mscom_marcom_CPW1a_SurfaceLaptopGo2forBusiness&icid=FY22SpringSurface"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Learn More ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid6.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">
+                Get Microsoft Teams for free
+              </div>
+              <p>
+                Online meetings, chat and shared cloud storage – all in one
+                place.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/microsoft-teams/free?icid=mscom_marcom_CPW2a_MicrosoftTeams"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Sign up for free ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid7.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">Microsoft 365 for business</div>
+              <p>
+                Stay a step ahead with powerful apps for productivity,
+                connection and security.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/microsoft-365/business/compare-all-microsoft-365-business-products?icid=mscom_marcom_CPW3a_M365forBusiness&activetab=tab%3aprimaryr2"
+                class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Shop Now ></a
+              >
+            </div>
+          </div>
+          <div class="gird-items flex flex-wrap my-5">
+            <img
+              src="images/grid8.jpg"
+              alt=""
+              class="md:object-contain w-[100%]"
+            />
+            <div>
+              <div class="font-medium text-2xl">
+                Windows 11 for business is here
+              </div>
+              <p>
+                Designed for hybrid work. Powerful for employees. Consistent for
+                IT. Secure for all.
+              </p>
+            </div>
+            <div class="grid-footer">
+              <a
+                href="https://www.microsoft.com/en-in/windows/business?icid=mscom_marcom_CPW4a_Windows11forBusiness"
+                class="text-base text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
+                >Learn More ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Follow Section -->
+    <section class="Follow">
+      <div class="grid grid-rows-2 mx-2 lg:mx-16 my-16">
+        <div class="Socia_Media align-middle my-4">
+          Follow Microsoft
+          <a href="https://www.facebook.com/MicrosoftIndia" target="_blank">
+            <img
+              src="images/Facebook 2x.jpg"
+              alt=""
+              class="w-8 align-middle mx-2"
+            />
+          </a>
+          <a href="https://twitter.com/microsoftindia" target="_blank">
+            <img
+              src="images/Twitter 2x.jpg"
+              alt=""
+              class="w-8 align-middle mx-2"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/user/IndiaMicrosoftVideos"
+            target="_blank"
+          >
+            <img
+              src="images/YouTube 2x.jpg"
+              alt=""
+              class="w-8 align-middle mx-2"
+            />
+          </a>
+        </div>
+        <div
+          class="Back_To_Top w-[100%] text-center grid grid-cols-1 md:flex md:justify-end items-center col-span-12"
+        >
+          <a
+            href="#header"
+            class="align-middle no-underline bg-[#b9b9b9] text-black rounded-sm px-auto py-2 font-medium md:px-4"
+            ><svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
               fill="none"
@@ -24,795 +522,401 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </div>
-          <div class="ml-2 lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+              /></svg
+            >Back To Top</a
+          >
         </div>
-        <div class="lg:order-1 lg:flex">
-          <div class="self-center mx-4">
-            <img src="images/microsoft.png" alt="Microsoft" class="w-28" />
-          </div>
-          <div class="menu-items">
-            <ul class="list-none hidden lg:flex lg:items-center text-sm p-0">
-              <li>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="bg-[#f2f2f2]">
+        <div
+          class="grid grid-cols-1 cs1:grid-cols-3 cs2:grid-cols-6 bg-[#f2f2f2] p-5 cs2:p-16"
+        >
+          <div class="col1 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">What's New</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
                 <a
-                  href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
-                  class="no-underline lg:mr-4 text-black"
+                  href="https://www.microsoft.com/microsoft-365"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
                   >Microsoft 365</a
                 >
               </li>
-              <li>
+              <li class="pb-4">
                 <a
-                  href="https://www.microsoft.com/en-in/microsoft-365/microsoft-office?rtc=1"
-                  class="no-underline lg:mr-4 text-black"
-                  >Office</a
+                  href="https://www.microsoft.com/en-in/surface/devices/surface-pro-x"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Surface Pro X</a
                 >
               </li>
-              <li>
+              <li class="pb-4">
                 <a
-                  href="https://www.microsoft.com/en-in/windows/?r=1"
-                  class="no-underline lg:mr-4 text-black"
-                  >Windows</a
+                  href="https://www.microsoft.com/en-in/surface/devices/surface-pro-7"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Surface Pro 7</a
                 >
               </li>
-              <li>
+              <li class="pb-4">
                 <a
-                  href="https://www.microsoft.com/en-in/surface"
-                  class="no-underline lg:mr-4 text-black"
-                  >Surface</a
+                  href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-3"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Surface Laptop 3</a
                 >
               </li>
-              <li>
+              <li class="pb-4">
                 <a
-                  href="https://www.xbox.com/en-IN/"
-                  class="no-underline lg:mr-4 text-black"
-                  >X Box</a
+                  href="https://www.microsoft.com/en-in/windows/windows-11-apps"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Windows 11 apps</a
                 >
               </li>
-              <li>
+            </ul>
+          </div>
+          <div class="col2 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">Microsoft Store</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
                 <a
-                  href="https://support.microsoft.com/en-us"
-                  class="no-underline text-black"
-                  >Support</a
+                  href="https://account.microsoft.com/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Accout Profile</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/download"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Download Center</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://go.microsoft.com/fwlink/?linkid=2139749"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Support Store</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://go.microsoft.com/fwlink/p/?LinkID=824764&clcid=0x4009"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Returns</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://account.microsoft.com/orders"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Order tracking</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col3 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">Education</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/education"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Mircrosoft in Education</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/education/devices/overview"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Devices for Education</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/education/products/teams"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft teams for education</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/education/buy-license/microsoft365"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft 365 Education</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/education/products/office"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Office Education</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://education.microsoft.com/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Educator training and development</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-us/store/b/education"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Deals for students and parents</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://azure.microsoft.com/en-in/free/students/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Azure for students</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col4 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">Business</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/microsoft-cloud"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Cloud</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/security"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Security</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://azure.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Azure</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://dynamics.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Dynamic 365</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/microsoft-365/business/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft 365</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://about.ads.microsoft.com/en-in"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Advertising</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/industry"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Industry</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Teams</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col5 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">Developer & IT</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
+                <a
+                  href="https://developer.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Developer Center</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://docs.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Documentation</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://docs.microsoft.com/en-in/learn/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Learn</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://techcommunity.microsoft.com/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Tech Community</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://azuremarketplace.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Azure Marketplace</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://appsource.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >AppSource</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://powerplatform.microsoft.com/en-in/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Microsoft Power Platform</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://visualstudio.microsoft.com/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Visual Studio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col6 pt-8 pr-4">
+            <span class="font-semibold text-[#616161]">Comapny</span>
+            <ul class="list-none text-xs text-[#616161] pl-0">
+              <li class="pb-4">
+                <a
+                  href="https://careers.microsoft.com/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Careers</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/about"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >About Microsoft</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://news.microsoft.com/en-in"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Company news</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://privacy.microsoft.com/en-in"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Privacy at Microsoft</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/investor/default.aspx"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Investors</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/security/default.aspx"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Security</a
+                >
+              </li>
+              <li class="pb-4">
+                <a
+                  href="https://www.microsoft.com/en-in/sustainability/"
+                  class="no-underline text-[#616161] hover:underline hover:text-black"
+                  >Sustainability</a
                 >
               </li>
             </ul>
           </div>
         </div>
-        <div class="flex justify-between lg:order-3">
-          <div class="hidden lg:block">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div class="text-center ml-4">
-            <a href="https://www.microsoft.com/en-in/store/cart">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="text-center ml-4">
-            <a
-              href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&rver=7.3.6963.0&wp=MBI_SSL&wreply=https%3a%2f%2fwww.microsoft.com%2fen-in%2fstore%2fcart&lc=16393&id=74335"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Hero Section -->
-      <section
-        class="slider flex flex-col-reverse lg:flex-row lg:justify-between lg:bg-gray-100 shadow-md"
-      >
-        <div class="left w-100 pt-4 pb-3 px-2 lg:w-1/4 lg:mx-20 lg:my-20">
-          <h2 class="text-2xl font-medium lg:text-3xl">
-            Surface Laptop Studio
-          </h2>
-          <p class="mb-4 text-base lg:text-base">
-            Flex your creative muscle on the most powerful Surface Laptop. Now
-            available with Windows 11.
-          </p>
-          <div class="my-8">
-            <a
-              href="https://www.microsoft.com/en-in/surface?icid=mscom_marcom_H2a_SurfaceLaptopStudio"
-              class="bg-[#0067b8] text-[white] rounded-sm no-underline px-5 py-3 font-medium"
-              >Shop Now</a
-            >
-          </div>
-        </div>
-        <div class="right bg-gray-100 items-center">
-          <img
-            src="images/Laptop.jpg"
-            alt="ERROR"
-            class="lg:w-[53rem] w-[25rem] md:w-[50rem] relative float-right"
-          />
-        </div>
-      </section>
-    </header>
-
-    <!-- Below Navbar Section -->
-    <section class="promo flex flex-wrap justify-center my-14">
-      <div>
-        <div class="item mx-4 my-3">
-          <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
-          <a
-            href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365"
-            class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-            >Choose your Microsoft 365</a
-          >
-        </div>
-      </div>
-      <div>
-        <div class="item mx-4 my-3">
-          <img src="images/icon2.jpg" alt="" class="block m-auto mb-1" />
-          <a
-            href="https://www.microsoft.com/en-in/surface?icid=MSCOM_QL_Surface"
-            class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-            >Exlore Surface devices</a
-          >
-        </div>
-      </div>
-      <div>
-        <div class="item mx-4 my-3">
-          <img src="images/icon3.jpg" alt="" class="block m-auto mb-1" />
-          <a
-            href="https://www.microsoft.com/en-in/store/b/xbox?icid=MSCOM_QL_Xbox"
-            class="text-base text-[#0067b8] underline-offset-0 font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-            >Buy Xbox games</a
-          >
-        </div>
-      </div>
-      <div>
-        <div class="item mx-4 my-3">
-          <img src="images/icon1.jpg" alt="" class="block m-auto mb-1" />
-          <a
-            href="https://www.microsoft.com/en-in/windows/get-windows-11?icid=MSCOM_QL_Windows"
-            class="text-base text-[#0067b8] font-medium hover:border-2 hover:border-[#0067b8] hove::border-dashed"
-            >Get Windows 11</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Grid Section -->
-    <section class="mx-2 lg:mx-16">
-      <div class="grid md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
-        <div class="grid-items flex flex-wrap my-5">
-          <img
-            src="images/grid1.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">Surface Laptop Go 2</div>
-            <p>
-              A sleek laptop with a 12.4-inch touchscreen, great typing
-              experience and improved HD camera.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-2?icid=mscom_marcom_CPH1a_SurfaceLaptopGo2&icid=FY22SpringSurface#overview"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Learn More ></a
-            >
-          </div>
-        </div>
-        <div class="grid-items flex flex-wrap my-5">
-          <img
-            src="images/grid2.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">Surface Laptop 4</div>
-            <p>
-              Do it all with a perfect balance of sleek, ultra-thin design,
-              multitasking speed and improved performance.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-4?icid=mscom_marcom_CPH2a_SurfaceLaptop4"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Shop Now ></a
-            >
-          </div>
-        </div>
-        <div class="grid-items flex flex-wrap my-5">
-          <img
-            src="images/grid3.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">PC Game Pass</div>
-            <p>
-              Unlock 100+ great games and EA Play, plus get your first month for
-              ₹50. Offer available to new subscribers only.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.xbox.com/en-in/games/store/pc-game-pass/cfq7ttc0kgq8?icid=mscom_marcom_CPH3a_PCGamePass"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Join Now ></a
-            >
-          </div>
-        </div>
-        <div class="grid-items flex flex-wrap my-5">
-          <img
-            src="images/grid4.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">
-              Design for life today - and tomorrow
-            </div>
-            <p>
-              The next-generation of games. Your goals. Friends and family.
-              Windows 11 was made to bring you closer to everything you love.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/windows/windows-11?icid=mscom_marcom_CPH4a_Win11PChlth#pchealthcheck"
-              class="text-base text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >See if your PC is ready ></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Microsoft Edge Section -->
-    <section class="Microsoft_Edge lg:mx-16 my-16">
-      <div class="grid grid-rows-2 md:flex md:flex-wrap md:flex-col">
-        <div class="card-background flex flex-wrap">
-          <img
-            src="images/edge.jpg"
-            alt=""
-            class="w-[100%] object-cover object-center"
-          />
-        </div>
-        <div class="card-foreground">
-          <div>
-            <h2 class="font-medium">Microsoft Edge</h2>
-            <div>
-              World-class performance with more privacy, more productivity and
-              more value while you browse.
-            </div>
-            <div class="my-10">
+        <div class="p-5 cs2:px-16">
+          <div class="flex justify-between flex-wrap flex-col md:flex-row">
+            <div class="text-xs">
               <a
-                href="https://www.microsoft.com/en-us/edge?form=MI13F3&OCID=MI13F3"
-                class="bg-[#0067b8] text-[white] rounded-sm no-underline px-5 py-3 font-medium"
-                >Download Now</a
+                href="https://www.microsoft.com/en-in/locale"
+                class="no-underline text-[#616161] hover:text-black hover:underline align-middle"
               >
+                <div class="flex items-center">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm9.567 9.098c-.059-.058-.127-.108-.206-.138-.258-.101-1.35.603-1.515.256-.108-.231-.327.148-.578.008-.121-.067-.459-.52-.611-.465-.312.112.479.974.694 1.087.203-.154.86-.469 1.002-.039.271.812-.745 1.702-1.264 2.171-.775.702-.63-.454-1.159-.86-.277-.213-.274-.667-.555-.824-.125-.071-.7-.732-.694-.821l-.017.167c-.095.072-.297-.27-.319-.325 0 .298.485.772.646 1.011.273.409.42 1.005.756 1.339.179.18.866.923 1.045.908l.921-.437c.649.154-1.531 3.237-1.738 3.619-.171.321.139 1.112.114 1.49-.029.437-.374.579-.7.817-.35.255-.268.752-.562.934-.521.321-.897 1.366-1.639 1.361-.219-.001-1.151.364-1.273.007-.095-.258-.223-.455-.356-.71-.131-.25-.015-.51-.175-.731-.11-.154-.479-.502-.513-.684-.002-.157.118-.632.283-.715.231-.118.044-.462.016-.663-.048-.357-.27-.652-.535-.859-.393-.302-.189-.542-.098-.974 0-.206-.126-.476-.402-.396-.57.166-.396-.445-.812-.417-.299.021-.543.211-.821.295-.349.104-.707-.083-1.053-.126-1.421-.179-1.885-1.804-1.514-2.976.037-.192-.115-.547-.048-.696.159-.352.485-.752.768-1.021.16-.152.365-.113.553-.231.29-.182.294-.558.578-.789.404-.328.956-.321 1.482-.392.281-.037 1.35-.268 1.518-.06 0 .039.193.611-.019.578.438.023 1.061.756 1.476.585.213-.089.135-.744.573-.427.265.19 1.45.275 1.696.07.152-.125.236-.939.053-1.031.117.116-.618.125-.686.099-.122-.044-.235.115-.43.025.117.055-.651-.358-.22-.674-.181.132-.349-.037-.544.109-.135.109.062.181-.13.277-.305.155-.535-.53-.649-.607-.118-.077-1.024-.713-.777-.298l.797.793c-.04.026-.209-.289-.209-.059.053-.136.02.585-.105.35-.056-.09.091-.14.006-.271 0-.085-.23-.169-.275-.228-.126-.157-.462-.502-.644-.585-.05-.024-.771.088-.832.111-.071.099-.131.203-.181.314-.149.055-.29.127-.423.216l-.159.356c-.068.061-.772.294-.776.303.03-.076-.492-.172-.457-.324.038-.167.215-.687.169-.877-.048-.199 1.085.287 1.158-.238.029-.227.047-.492-.316-.531.069.008.702-.249.807-.364.148-.169.486-.447.731-.447.286 0 .225-.417.356-.622.133.053-.071.38.088.512-.01-.104.45.057.494.033.105-.056.691-.023.601-.299-.101-.28.052-.197.183-.255-.02.008.248-.458.363-.456-.104-.089-.398.112-.516.103-.308-.024-.177-.525-.061-.672.09-.116-.246-.258-.25-.036-.006.332-.314.633-.243 1.075.109.666-.743-.161-.816-.115-.283.172-.515-.216-.368-.449.149-.238.51-.226.659-.48.104-.179.227-.389.388-.524.541-.454.689-.091 1.229-.042.526.048.178.125.105.327-.07.192.289.261.413.1.071-.092.232-.326.301-.499.07-.175.578-.2.527-.365 2.72 1.148 4.827 3.465 5.694 6.318zm-11.113-3.779l.068-.087.073-.019c.042-.034.086-.118.151-.104.043.009.146.095.111.148-.037.054-.066-.049-.081.101-.018.169-.188.167-.313.222-.087.037-.175-.018-.09-.104l.088-.108-.007-.049zm.442.245c.046-.045.138-.008.151-.094.014-.084.078-.178-.008-.335-.022-.042.116-.082.051-.137l-.109.032s.155-.668.364-.366l-.089.103c.135.134.172.47.215.687.127.066.324.078.098.192.117-.02-.618.314-.715.178-.072-.083.317-.139.307-.173-.004-.011-.317-.02-.265-.087zm1.43-3.547l-.356.326c-.36.298-1.28.883-1.793.705-.524-.18-1.647.667-1.826.673-.067.003.002-.641.36-.689-.141.021.993-.575 1.185-.805.678-.146 1.381-.227 2.104-.227l.326.017zm-5.086 1.19c.07.082.278.092-.026.288-.183.11-.377.809-.548.809-.51.223-.542-.439-1.109.413-.078.115-.395.158-.644.236.685-.688 1.468-1.279 2.327-1.746zm-5.24 8.793c0-.541.055-1.068.139-1.586l.292.185c.113.135.113.719.169.911.139.482.484.751.748 1.19.155.261.414.923.332 1.197.109-.179 1.081.824 1.259 1.033.418.492.74 1.088.061 1.574-.219.158.334 1.14.049 1.382l-.365.094c-.225.138-.235.397-.166.631-1.562-1.765-2.518-4.076-2.518-6.611zm14.347-5.823c.083-.01-.107.167-.107.167.033.256.222.396.581.527.437.157.038.455-.213.385-.139-.039-.854-.255-.879.025 0 .167-.679.001-.573-.175.073-.119.05-.387.186-.562.193-.255.38-.116.386.032-.001.394.398-.373.619-.399z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ml-3">English (India)</div>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-wrap justify-evenly text-xs">
+              <div class="mr-3 mt-2 md:mr-8">
+                <a
+                  href="https://support.microsoft.com/contactus"
+                  class="no-underline text-[#616161] hover:text-black hover:underline"
+                  >Contact Microsoft</a
+                >
+              </div>
+              <div class="mr-3 mt-2 md:mr-8">
+                <a
+                  href="https://privacy.microsoft.com/en-gb/privacystatement"
+                  class="no-underline text-[#616161] hover:text-black hover:underline"
+                  >Privacy</a
+                >
+              </div>
+              <div class="mr-3 mt-2 md:mr-8">
+                <a
+                  href="https://www.microsoft.com/en-us/legal/terms-of-use"
+                  class="no-underline text-[#616161] hover:text-black hover:underline"
+                  >Terms of use</a
+                >
+              </div>
+              <div class="mr-3 mt-2 md:mr-8">
+                <a
+                  href="https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks"
+                  class="no-underline text-[#616161] hover:text-black hover:underline"
+                  >Trademarks</a
+                >
+              </div>
+              <div class="mr-3 mt-2 md:mr-8">
+                <a
+                  href="https://account.microsoft.com/privacy/ad-settings/signedout?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2Fad-settings%3Frefd%3Dwww.microsoft.com"
+                  class="no-underline text-[#616161] hover:text-black hover:underline"
+                  >About our ads</a
+                >
+              </div>
+              <div class="text-[#616161] mt-2">&#169; Nishant 2022</div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Business Section (2nd Grid Section) -->
-    <section class="mx-2 lg:mx-16">
-      <h1 class="text-3xl font-semibold my-0">For business</h1>
-      <div class="grid md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
-        <div class="gird-items flex flex-wrap my-5">
-          <img
-            src="images/grid5.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">
-              Surface Laptop Go 2 for Business
-            </div>
-            <p>
-              A sleek, portable laptop featuring a great typing experience,
-              Windows 11 Pro and professional-grade performance.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/surface/business/surface-laptop-go-2?icid=mscom_marcom_CPW1a_SurfaceLaptopGo2forBusiness&icid=FY22SpringSurface"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Learn More ></a
-            >
-          </div>
-        </div>
-        <div class="gird-items flex flex-wrap my-5">
-          <img
-            src="images/grid6.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">Get Microsoft Teams for free</div>
-            <p>
-              Online meetings, chat and shared cloud storage – all in one place.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/microsoft-teams/free?icid=mscom_marcom_CPW2a_MicrosoftTeams"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Sign up for free ></a
-            >
-          </div>
-        </div>
-        <div class="gird-items flex flex-wrap my-5">
-          <img
-            src="images/grid7.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">Microsoft 365 for business</div>
-            <p>
-              Stay a step ahead with powerful apps for productivity, connection
-              and security.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/microsoft-365/business/compare-all-microsoft-365-business-products?icid=mscom_marcom_CPW3a_M365forBusiness&activetab=tab%3aprimaryr2"
-              class="text-base my-2 text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Shop Now ></a
-            >
-          </div>
-        </div>
-        <div class="gird-items flex flex-wrap my-5">
-          <img
-            src="images/grid8.jpg"
-            alt=""
-            class="md:object-contain w-[100%]"
-          />
-          <div>
-            <div class="font-medium text-2xl">
-              Windows 11 for business is here
-            </div>
-            <p>
-              Designed for hybrid work. Powerful for employees. Consistent for
-              IT. Secure for all.
-            </p>
-          </div>
-          <div class="grid-footer">
-            <a
-              href="https://www.microsoft.com/en-in/windows/business?icid=mscom_marcom_CPW4a_Windows11forBusiness"
-              class="text-base text-[#0067b8] no-underline font-medium hover:border-2 hover:border-[#0067b8] hover:border-dashed"
-              >Learn More ></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Follow Section -->
-    <section class="Follow grid grid-rows-2 mx-2 lg:mx-16 my-16">
-      <div class="Socia_Media align-middle my-4">
-        Follow Microsoft
-        <a href="https://www.facebook.com/MicrosoftIndia" target="_blank">
-          <img
-            src="images/Facebook 2x.jpg"
-            alt=""
-            class="w-8 align-middle mx-2"
-          />
-        </a>
-        <a href="https://twitter.com/microsoftindia" target="_blank">
-          <img
-            src="images/Twitter 2x.jpg"
-            alt=""
-            class="w-8 align-middle mx-2"
-          />
-        </a>
-        <a
-          href="https://www.youtube.com/user/IndiaMicrosoftVideos"
-          target="_blank"
-        >
-          <img
-            src="images/YouTube 2x.jpg"
-            alt=""
-            class="w-8 align-middle mx-2"
-          />
-        </a>
-      </div>
-      <div
-        class="Back_To_Top w-[100%] text-center grid grid-cols-1 md:flex md:justify-end items-center col-span-12"
-      >
-        <a
-          href="#header"
-          class="align-middle no-underline bg-[#b9b9b9] text-black rounded-sm px-auto py-2 font-medium md:px-4"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            /></svg
-          >Back To Top</a
-        >
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="mx-2 lg:mx-16 bg-[#f2f2f2]">
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 bg-[#f2f2f2] text-center"
-      >
-        <div class="col1 pt-8">
-          <span class="font-semibold text-[#616161]">What's New</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/microsoft-365"
-                class="no-underline text-[#616161]"
-                >Microsoft 365</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/surface/devices/surface-pro-x"
-                class="no-underline text-[#616161]"
-                >Surface Pro X</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/surface/devices/surface-pro-7"
-                class="no-underline text-[#616161]"
-                >Surface Pro 7</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-3"
-                class="no-underline text-[#616161]"
-                >Surface Laptop 3</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/windows/windows-11-apps"
-                class="no-underline text-[#616161]"
-                >Windows 11 apps</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col2 pt-8">
-          <span class="font-semibold text-[#616161]">Microsoft Store</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://account.microsoft.com/"
-                class="no-underline text-[#616161]"
-                >Accout Profile</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/download"
-                class="no-underline text-[#616161]"
-                >Download Center</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://go.microsoft.com/fwlink/?linkid=2139749"
-                class="no-underline text-[#616161]"
-                >Microsoft Support Store</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://go.microsoft.com/fwlink/p/?LinkID=824764&clcid=0x4009"
-                class="no-underline text-[#616161]"
-                >Returns</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://account.microsoft.com/orders"
-                class="no-underline text-[#616161]"
-                >Order tracking</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col3 pt-8">
-          <span class="font-semibold text-[#616161]">Education</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/education"
-                class="no-underline text-[#616161]"
-                >Mircrosoft in Education</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/education/devices/overview"
-                class="no-underline text-[#616161]"
-                >Devices for Education</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/education/products/teams"
-                class="no-underline text-[#616161]"
-                >Microsoft teams for education</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/education/buy-license/microsoft365"
-                class="no-underline text-[#616161]"
-                >Microsoft 365 Education</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/education/products/office"
-                class="no-underline text-[#616161]"
-                >Office Education</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://education.microsoft.com/"
-                class="no-underline text-[#616161]"
-                >Educator training and development</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-us/store/b/education"
-                class="no-underline text-[#616161]"
-                >Deals for students and parents</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://azure.microsoft.com/en-in/free/students/"
-                class="no-underline text-[#616161]"
-                >Azure for students</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col4 pt-8">
-          <span class="font-semibold text-[#616161]">Business</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/microsoft-cloud"
-                class="no-underline text-[#616161]"
-                >Microsoft Cloud</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/security"
-                class="no-underline text-[#616161]"
-                >Microsoft Security</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://azure.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Azure</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://dynamics.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Dynamic 365</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/microsoft-365/business/"
-                class="no-underline text-[#616161]"
-                >Microsoft 365</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://about.ads.microsoft.com/en-in"
-                class="no-underline text-[#616161]"
-                >Microsoft Advertising</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/industry"
-                class="no-underline text-[#616161]"
-                >Microsoft Industry</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software"
-                class="no-underline text-[#616161]"
-                >Microsoft Teams</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col5 pt-8">
-          <span class="font-semibold text-[#616161]">Developer & IT</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://developer.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Developer Center</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://docs.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Documentation</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://docs.microsoft.com/en-in/learn/"
-                class="no-underline text-[#616161]"
-                >Microsoft Learn</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://techcommunity.microsoft.com/"
-                class="no-underline text-[#616161]"
-                >Microsoft Tech Community</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://azuremarketplace.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Azure Marketplace</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://appsource.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >AppSource</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://powerplatform.microsoft.com/en-in/"
-                class="no-underline text-[#616161]"
-                >Microsoft Power Platform</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://visualstudio.microsoft.com/"
-                class="no-underline text-[#616161]"
-                >Visual Studio</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col6 pt-8">
-          <span class="font-semibold text-[#616161]">Comapny</span>
-          <ul class="list-none text-xs text-[#616161]">
-            <li class="pb-4">
-              <a
-                href="https://careers.microsoft.com/"
-                class="no-underline text-[#616161]"
-                >Careers</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/about"
-                class="no-underline text-[#616161]"
-                >About Microsoft</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://news.microsoft.com/en-in"
-                class="no-underline text-[#616161]"
-                >Company news</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://privacy.microsoft.com/en-in"
-                class="no-underline text-[#616161]"
-                >Privacy at Microsoft</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/investor/default.aspx"
-                class="no-underline text-[#616161]"
-                >Investors</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/security/default.aspx"
-                class="no-underline text-[#616161]"
-                >Security</a
-              >
-            </li>
-            <li class="pb-4">
-              <a
-                href="https://www.microsoft.com/en-in/sustainability/"
-                class="no-underline text-[#616161]"
-                >Sustainability</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </footer>

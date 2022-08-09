@@ -3,10 +3,11 @@ module.exports = {
   content: ["*"],
   theme: {
     extend: {
-      backgroundImage: {
-        'edge': "url('images/edge.jpg')"
+      screens: {
+        'cs1': '540px',
+        'cs2': '1080px'
+        },
       },
     },
-  },
   plugins: [],
 }
